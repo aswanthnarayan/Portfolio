@@ -4,13 +4,13 @@ import github from "/github.png";
 import linkedin from "/linkedin.png";
 import instagram from "/instagram.png";
 import facebook from "/facebook.png";
+
 import {
   Drawer,
-  Button,
-  Typography,
   IconButton,
 } from "@material-tailwind/react";
 import menu from "/menu-bar.png";
+
 
  
 export function MobileDrawer() {
@@ -18,6 +18,7 @@ export function MobileDrawer() {
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
 
+ 
  
   return (
     <React.Fragment>
@@ -28,6 +29,7 @@ export function MobileDrawer() {
         onClose={openDrawerRight}
         className="p-4"
         size={200}
+        
       >
          <div className="mb-6 flex items-center ">
           <IconButton className="ml-auto" variant="text" color="black" onClick={closeDrawerRight}>
