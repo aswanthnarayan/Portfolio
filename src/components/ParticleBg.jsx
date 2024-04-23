@@ -342,7 +342,7 @@ const ParticleBg = () => {
                             "animation": {
                               "count": 0,
                               "enable": false,
-                              "speed": 2,
+                              "speed": 50,
                               "decay": 0,
                               "delay": 0,
                               "sync": false,
