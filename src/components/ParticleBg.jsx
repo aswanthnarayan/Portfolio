@@ -61,8 +61,8 @@ const ParticleBg = () => {
                           "detectsOn": "window",
                           "events": {
                             "onClick": {
-                              "enable": false,
-                              "mode": []
+                              "enable": true,
+                              "mode": "push"
                             },
                             "onDiv": {
                               "selectors": [],
@@ -72,17 +72,9 @@ const ParticleBg = () => {
                             },
                             "onHover": {
                               "enable": false,
-                              "mode": [],
-                              "parallax": {
-                                "enable": false,
-                                "force": 2,
-                                "smooth": 10
-                              }
-                            },
-                            "resize": {
-                              "delay": 0.5,
-                              "enable": true
-                            }
+                              "mode": "repulse"
+                          },
+                          "resize": true
                           },
                           "modes": {
                             "trail": {
@@ -576,7 +568,7 @@ const ParticleBg = () => {
                                 "default": "none",
                                 "right": "destroy"
                               },
-                              "straight": true
+                              "straight": false
                             },
                             "zIndex": {
                               "value": -999
@@ -588,7 +580,7 @@ const ParticleBg = () => {
                               },
                               "animation": {
                                 "enable": true,
-                                "speed": 100,
+                                "speed": 50,
                                 "sync": true
                               }
                             }
