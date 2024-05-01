@@ -9,6 +9,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import EducationPage from "./pages/EducationPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import AOSWrapper from './components/AOSWrapper';
 
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -32,9 +33,11 @@ function App() {
   }, []);
 
   return (
-    <div className=''>
-      <ParticleBg/>
+    // bg-[#0c0c1D]
+    <div className="bg-[#0c0c1D]">
+      {/* <ParticleBg/>  */}
       <div className="max-w-screen relative z-1 text-white flex flex-col">
+        <AOSWrapper>
         <Navbar />
         <section>
           <HomePage/>
@@ -55,6 +58,7 @@ function App() {
           <ContactPage/>
         </section>
         {showScrollButton && <ScrollToTopButton />}
+        </AOSWrapper>
       </div>
     </div>
   );
