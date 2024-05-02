@@ -87,7 +87,7 @@ const AboutPage = () => {
   };
 
   return (
-    <section  id="about">
+    <section  id="about" className="min-h-screen">
       <div className="flex flex-col py-4 md:flex-row ">
        <div className="flex items-center justify-center md:w-1/2">
        <img

@@ -35,7 +35,7 @@ function App() {
   return (
     // bg-[#0c0c1D]
     <div className="bg-[#0c0c1D]">
-      {/* <ParticleBg/>  */}
+      <ParticleBg/> 
       <div className="max-w-screen relative z-1 text-white flex flex-col">
         <AOSWrapper>
         <Navbar />
