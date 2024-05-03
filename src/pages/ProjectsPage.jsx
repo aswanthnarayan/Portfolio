@@ -142,7 +142,7 @@ const ProjectsPage = () => {
         My Personal Projects
       </h2>
 
-      <ul className="p-3 flex flex-col gap-3 md:grid md:grid-cols-3 md:p-6">
+      <ul className="p-3 flex flex-col gap-3 md:grid md:grid-cols-3 md:p-6 md:gap-6">
         {currentProjects.map((project, index) => (
           <li key={index}>
             <ProjectCard
@@ -158,7 +158,7 @@ const ProjectsPage = () => {
       </ul>
 
       {/* Pagination */}
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         {Array.from({ length: Math.ceil(projectsData.length / projectsPerPage) }, (_, index) => (
           <button
             key={index}
