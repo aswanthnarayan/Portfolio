@@ -25,12 +25,10 @@ const Navbar = () => {
       initial={{ opacity: 0, scale: 0.2 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5 }}
-      className="hidden md:flex md:gap-8 lg:gap-12">
+      className="hidden md:flex md:gap-16 lg:gap-24">
       <li onClick={() => scrollToSection("home")}>Home</li>
         <li onClick={() => scrollToSection("about")}>About</li>
         <li onClick={() => scrollToSection("projects")}>Projects</li>
-        <li onClick={() => scrollToSection("experience")}>Experience</li>
-        <li onClick={() => scrollToSection("education")}>Education</li>
         <li onClick={() => scrollToSection("contact")}>Contact</li>
       </motion.ul>
       <motion.div 

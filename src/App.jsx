@@ -5,8 +5,6 @@ import Navbar from './components/Navbar';
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
-import ExperiencePage from "./pages/ExperiencePage";
-import EducationPage from "./pages/EducationPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import AOSWrapper from './components/AOSWrapper';
@@ -35,7 +33,7 @@ function App() {
   return (
     // bg-[#0c0c1D]
     <div className="bg-gray-700">
-      {/* <ParticleBg/>  */}
+      <ParticleBg/> 
       <div className="max-w-screen relative z-1 text-white flex flex-col">
         <AOSWrapper>
         <Navbar />
@@ -47,12 +45,6 @@ function App() {
         </section>
         <section>
           <ProjectsPage/>
-        </section>
-        <section>
-          <ExperiencePage/>
-        </section>
-        <section>
-          <EducationPage/>
         </section>
         <section>
           <ContactPage/>

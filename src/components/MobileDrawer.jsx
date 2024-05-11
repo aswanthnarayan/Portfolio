@@ -52,10 +52,9 @@ export function MobileDrawer() {
     <div className="flex flex-col items-center justify-center text-black gap-12">
       <div className="flex flex-col items-center justify-center gap-8 ">
         <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
         <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </div>
       <div className="flex gap-2">
         <img className="w-4 " src={github} alt="logo" />
