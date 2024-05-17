@@ -111,7 +111,7 @@ const AboutPage = () => {
            data-aos ="fade-left"
            data-aos-delay = "600"
            data-aos-duration = "700"
-           className="text-base lg:text-xl">
+           className="text-base lg:text-xl break-words">
             I am a Self-taught web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, Next.js,

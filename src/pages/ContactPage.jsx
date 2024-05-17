@@ -2,30 +2,56 @@ import React from "react";
 
 function ContactPage() {
   return (
-    <div id="contact" className="h-screen flex items-center ">
-      <div className="w-1/2 flex flex-col items-center">
-        <div className="w">
-          <h1 className="text-[100px]">Let’s work together</h1>
+    <div id="contact" className="h-auto flex flex-col p-5 w-full md:p-6 md:h-screen md:flex-row md:items-center ">
+      <div className="my-5 md:w-1/2 md:my-0">
+        <div className="flex flex-col gap-4 ">
+          <h1 className="first-letter:text-[#FFA500] text-[70px] leading-[70px] lg:text-[100px] lg:leading-[88px]" >
+            Let’s work together
+          </h1>
           <div>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+            <h2 className="text-[#FFA500]">Mail</h2>
+            <span className="text-xl break-words">
+              aswanthnarayanan@gmail.com
+            </span>
           </div>
           <div>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+            <h2 className="text-[#FFA500]">Address</h2>
+            <p className="text-xl line-clamp-3 break-words">
+              Kunnichal House, Muzhappala, Kannur, Kerala, pin:670611
+            </p>
           </div>
-         <div>
-         <h2>Phone</h2>
-          <span>+1 234 5678</span>
-         </div>
+          <div>
+            <h2 className="text-[#FFA500]">Phone</h2>
+            <span className=" text-xl break-words">+918592837949</span>
+          </div>
         </div>
       </div>
-      <div className="w-1/2 flex flex-col items-center">
-        <form className="flex flex-col">
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
+
+      <div className="md:w-1/2 px-0 md:px-5 lg:px-12">
+        {/* flex flex-col w-full */}
+        <form className="flex flex-col gap-3 md:gap-6">
+          {/* flex flex-col gap-3  */}
+          <input
+            className="bg-transparent border p-2 "
+            type="email"
+            required
+            placeholder="Email"
+            name="email"
+          />
+          <input
+            className="bg-transparent border p-2 "
+            type="text"
+            required
+            placeholder="Name"
+            name="name"
+          />
+          <textarea
+            className="bg-transparent border p-2  "
+            rows={8}
+            placeholder="Message"
+            name="message"
+          />
+          <button className="bg-[#FFA500] mb-3 py-2 rounded-md ">Submit</button>
         </form>
       </div>
     </div>

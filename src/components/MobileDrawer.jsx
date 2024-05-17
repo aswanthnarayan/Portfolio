@@ -18,6 +18,14 @@ export function MobileDrawer() {
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
 
+
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
  
  
   return (
@@ -50,12 +58,12 @@ export function MobileDrawer() {
           </IconButton>
         </div>
     <div className="flex flex-col items-center justify-center text-black gap-12">
-      <div className="flex flex-col items-center justify-center gap-8 ">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </div>
+      <ul className="flex flex-col items-center justify-center gap-8 ">
+      <li onClick={() => scrollToSection("home")}>Home</li>
+        <li onClick={() => scrollToSection("about")}>About</li>
+        <li onClick={() => scrollToSection("projects")}>Projects</li>
+        <li onClick={() => scrollToSection("contact")}>Contact</li>
+      </ul>
       <div className="flex gap-2">
         <img className="w-4 " src={github} alt="logo" />
         <img className="w-4 " src={linkedin} alt="logo" />
