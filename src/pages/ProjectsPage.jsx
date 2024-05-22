@@ -4,125 +4,70 @@ import ProjectCard from "../components/ProjectCard";
 const projectsData = [
   {
     id: 1,
-    title: "ECommerce Web App",
-    description:
-      "Full end to end project including Frontend using ReactJs and Backend using NodeJs(ExpressJs), MongoDB(Mongoose).",
-    image: "/hero.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "React Blog App",
+    description: "A comprehensive full-stack blog application built using React.js for the frontend and Node.js (Express) for the backend, with MongoDB (Mongoose) as the database. This project demonstrates CRUD operations, user authentication, and responsive design, making it a robust solution for managing and publishing blog posts.",
+    image: "/projects/blog.png",
+    gitUrl: "https://github.com/aswanthnarayan/react-blog-app",
+    previewUrl: "https://react-blog-app-aswanth.netlify.app",
   },
   {
     id: 2,
-    title: "Restaurant Website",
-    description:
-      "Dynamic UI for a aesthetic restaurant website, fully responsive for all devices using React.js",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "React Weather App",
+    description: "A visually appealing and fully responsive weather application built with React.js. It fetches weather data from an external API and displays current weather conditions along with a 5-day forecast, providing users with an intuitive interface to stay updated on the latest weather information.",
+    image: "/projects/react-weather-app.png",
+    gitUrl: "https://github.com/aswanthnarayan/react-weather-app",
+    previewUrl: "https://weather-app-react-aswanth.netlify.app",
   },
   {
     id: 3,
-    title: "Pet Grooming Website",
-    description:
-      "Dynamic UI for a aesthetic pet grooming website, fully responsive for all devices using React.js",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Personal Portfolio Website",
+    description: "A dynamic and aesthetically pleasing personal portfolio website created using React.js. This project showcases personal projects, skills, and contact information, featuring a modern design that is fully responsive across all devices. It aims to highlight professional achievements and experiences in a visually compelling manner.",
+    image: "/projects/portfolio.png",
+    gitUrl: "https://github.com/aswanthnarayan/Portfolio",
+    previewUrl: "https://aswanthck.netlify.app/",
   },
   {
     id: 4,
-    title: "Stock Manangement App",
-    description:
-      "Full end to end project using NextJs and MongoDB(Mongoose) for database.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Movie Search App",
+    description: "A movie search application developed with pure HTML, CSS, and JavaScript. It allows users to search for movies, view details, and access ratings. This project provides an intuitive and interactive user experience with a simple yet effective user interface for movie enthusiasts.",
+    image: "/projects/movie-search-app.png",
+    gitUrl: "https://github.com/aswanthnarayan/Movie-App-JS",
+    previewUrl: "https://movie-search-app-asw.netlify.app",
   },
   {
     id: 5,
-    title: "AI-Saas Tool",
-    description:
-      "This AI Saas Tool provides 5 different day to day AI Services using Chatgpt API's to make your daily life easy.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Online Code Editor",
+    description: "An online code editor tool that allows users to write, edit, and preview HTML, CSS, and JavaScript code in real-time. Built with React.js, this project aims to facilitate web development and testing by providing a seamless and interactive coding environment.",
+    image: "/projects/code-editor.png",
+    gitUrl: "https://github.com/aswanthnarayan/Online-Code-Editor-using-React---React-Project---jjks3mxt1pdg",
+    previewUrl: "https://online-code-editor-using-react-react-project-jjks3mx-rcvwuhbtw.vercel.app/",
   },
   {
     id: 6,
-    title: "Promptify Prompt Sharing Library",
-    description:
-      "You can share your awesome AI prompts here, it will help the community to learn and you can get recognition for the great work you are doing.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Word Guess Game",
+    description: "A word guessing game inspired by Wordle, where users attempt to guess a hidden word within a limited number of attempts. Built using JavaScript, this project offers a fun and challenging experience, featuring a clean interface and responsive design.",
+    image: "/projects/word-guess-game.png",
+    gitUrl: "https://github.com/aswanthnarayan/Word-Guessing-Game",
+    previewUrl: "https://word-guess-game-aswanth.netlify.app/",
   },
   {
     id: 7,
-    title: "Netflix clone (Watchofy)",
-    description:
-      "Used NextJs App Based Router for frontend and API routes. Very similar to real Netflix.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Tip Calculator",
+    description: "A simple and intuitive web application that helps users calculate the tip amount based on the total bill and desired tip percentage. This project is designed to enhance user experience with a clean UI and responsive design, making it easy to use on both desktop and mobile devices.",
+    image: "/projects/tip-calculator.png",
+    gitUrl: "https://github.com/aswanthnarayan/Tip-Calculator-app-FrontEndMentor",
+    previewUrl: "https://tip-calculator-frontendmentor-asw.netlify.app/",
   },
   {
     id: 8,
-    title: "Spotify Clone",
-    description:
-      "This website gives a little bit feel of spotify where we have some set of songs which you can play and have fun. Some of the functionalities include pausing and starting from any point, and it will automatically run next song when one ends, if no interruption in between",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
-  },
-  {
-    id: 9,
-    title: "Tic Tac Toe Game",
-    description:
-      "This is very famous game which consists of 3*3 grid and players are allowed to play alternatively with 'X' or '0'. They will be able to see animations on game end or draw.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl:
-      "https://github.com/aswanthnarayan",
-  },
-  {
-    id: 10,
-    title: "TextUtils Web App",
-    description:
-      "This app helps to change the collection of text to some different form. It can be converting letters to uppercase, or lowercase or capitalized format. This will also tell you the number of words entered and the average time to read that text",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
-  },
-  {
-    id: 11,
-    title: "Flipkart Clone (Frontend)",
-    description:
-      "This app looks like Flipkart on look and feel, where we have some set of images of different category of products like electronic gadgets, sports equipments and vacation trips.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl:
-      "https://github.com/aswanthnarayan",
-  },
-  {
-    id: 12,
-    title: "Todo App",
-    description:
-      " Seamless Drag and Drop option between active and completed tasks",
-    image: "/mountains.png",
-    gitUrl:
-      "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
-  },
-  {
-    id: 13,
-    title: "Uber App Clone",
-    description:
-      "This uses React Native 📱 powered by Expo Router & Google Maps API for directions, search autocomplete, places, and distance calculations.",
-    image: "/mountains.png",
-    gitUrl: "https://github.com/aswanthnarayan",
-    previewUrl: "https://github.com/aswanthnarayan",
+    title: "Weather App Using Vanilla JS",
+    description: "A dynamic and responsive weather application built using pure JavaScript (Vanilla JS). It fetches and displays weather data from an external API, providing users with current weather conditions and forecasts. The project emphasizes simplicity and accessibility across all devices.",
+    image: "/projects/js-weather-app.png",
+    gitUrl: "https://github.com/aswanthnarayan/Weather-App",
+    previewUrl: "https://weatherapp-asw.netlify.app/",
   },
 ];
+
 
 
 const ProjectsPage = () => {
