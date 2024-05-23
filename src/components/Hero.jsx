@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { scrollToSection } from "../HelperFunctions";
 
 const Hero = () => {
   const scrollimage = {
@@ -52,14 +52,16 @@ const Hero = () => {
           data-aos ="fade-up"
           data-aos-delay = "600"
           data-aos-duration = "700"
-          className="border border-white p-1.5 rounded-md">
+          onClick={() => scrollToSection("projects")}
+          className="border border-white hover:border-[#FFA500] p-1.5 rounded-md z-20 ">
             See the Latest Works
           </button>
           <button
           data-aos ="fade-up"
           data-aos-delay = "900"
           data-aos-duration = "700"
-          className="border border-white p-1.5 rounded-md">
+          onClick={() => scrollToSection("contact")}
+          className="border border-white hover:border-[#FFA500] p-1.5 rounded-md z-20">
             Contact Me
           </button>
         </div>
@@ -67,15 +69,15 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="absolute bottom-0 font-bold text-9xl whitespace-nowrap text-white opacity-10 overflow-hidden"
+        className="absolute bottom-0 font-bold text-9xl whitespace-nowrap  text-white opacity-10 overflow-hidden"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         <motion.span>React Redux Javascript HTML&CSS Tailwind Node </motion.span>
       </motion.div>
-      <div className="relative h-1/2 flex justify-center md:h-full md:w-1/2">
-        <img  className="absolute h-full object-cover" src="/hero.png" alt="" />
+      <div className="relative h-1/2 flex justify-center md:h-full md:w-1/2 ">
+        <img  className="absolute h-full object-cover" src="/hero3.png" alt="" />
       </div>
     </div>
   );

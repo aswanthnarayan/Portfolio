@@ -6,33 +6,23 @@ import TabButton from "../components/TabButton";
 
 const skillsList = [
   "React.js",
-  "Next.js",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
   "Javascript",
   "HTML",
   "CSS",
   "Github",
-  "MySQL",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
 ];
 
 const certificateList = [
   {
-    url: "https://test",
-    name: "Javascript-Advanced",
+    url: "https://coursera.org/share/c74b4530fc38bbd12cb2c241b31dd324",
+    name: "Introduction to Front-End Development",
   },
   {
-    url: "https://test1",
-    name: "React-Certified",
-  },
-  {
-    url: "https://test2",
-    name: "HTML/CSS Certified",
-  },
-  {
-    url: "https://test3",
-    name: "React Native Certified",
+    url: "https://coursera.org/share/1125eae88c1f10ca1780e64305c89d60",
+    name: "Programming with JavaScript",
   },
 ];
 

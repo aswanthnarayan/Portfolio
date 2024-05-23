@@ -1,15 +1,12 @@
 import React from "react";
-import logo from "/logo.png";
-import github from "/github.png";
-import linkedin from "/linkedin.png";
-import instagram from "/instagram.png";
-import facebook from "/facebook.png";
+
 
 import {
   Drawer,
   IconButton,
 } from "@material-tailwind/react";
 import menu from "/menu-bar.png";
+import { scrollToSection } from "../HelperFunctions";
 
 
  
@@ -19,13 +16,6 @@ export function MobileDrawer() {
   const closeDrawerRight = () => setOpenRight(false);
 
 
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
  
  
   return (
@@ -40,7 +30,7 @@ export function MobileDrawer() {
         
       >
          <div className="mb-6 flex items-center ">
-          <IconButton className="ml-auto" variant="text" color="black" onClick={closeDrawerRight}>
+          <IconButton className="ml-auto cursor-pointer hover:scale-125 transition ease-in duration-300" variant="text" color="black" onClick={closeDrawerRight}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -59,16 +49,32 @@ export function MobileDrawer() {
         </div>
     <div className="flex flex-col items-center justify-center text-black gap-12">
       <ul className="flex flex-col items-center justify-center gap-8 ">
-      <li onClick={() => scrollToSection("home")}>Home</li>
-        <li onClick={() => scrollToSection("about")}>About</li>
-        <li onClick={() => scrollToSection("projects")}>Projects</li>
-        <li onClick={() => scrollToSection("contact")}>Contact</li>
+      <li className="cursor-pointer hover:scale-125 transition ease-in duration-300"  onClick={() =>{
+        closeDrawerRight()
+        scrollToSection("home")  }}>Home</li>
+        <li className="cursor-pointer hover:scale-125 transition ease-in duration-300" onClick={() =>{
+          closeDrawerRight()
+          scrollToSection("about")}}>About</li>
+        <li className="cursor-pointer hover:scale-125 transition ease-in duration-300" onClick={() =>{
+          closeDrawerRight()
+          scrollToSection("projects")}}>Projects</li>
+        <li className="cursor-pointer hover:scale-125 transition ease-in duration-300" onClick={() =>{
+          closeDrawerRight()
+          scrollToSection("contact")}}>Contact</li>
       </ul>
       <div className="flex gap-2">
-        <img className="w-4 " src={github} alt="logo" />
-        <img className="w-4 " src={linkedin} alt="logo" />
-        <img className="w-4 " src={instagram} alt="logo" />
-        <img className="w-4 " src={facebook} alt="logo" />
+      <a href="https://github.com/aswanthnarayan" className="cursor-pointer  hover:scale-125 transition ease-in duration-300" target="_blank" rel="noopener noreferrer">
+          <img className="w-6 " src="./github.png" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/aswanth-narayanan" className="cursor-pointer hover:scale-125 transition ease-in duration-300" target="_blank" rel="noopener noreferrer">
+          <img className="w-6 " src="./linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://instagram.com/joey_tribbiani_____" className="cursor-pointer hover:scale-125 transition ease-in duration-300" target="_blank" rel="noopener noreferrer">
+          <img className="w-6 " src="./instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://facebook.com/aswanth.narayan" className="cursor-pointer hover:scale-125 transition ease-in duration-300" target="_blank" rel="noopener noreferrer">
+        <img className="w-6 " src="./facebook.png" alt="Instagram" />
+        </a>
       </div>
         </div>
       </Drawer>

@@ -79,7 +79,15 @@ const ProjectsPage = () => {
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projectsData.slice(indexOfFirstProject, indexOfLastProject);
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    // Scroll to the top of the projects section
+    window.scrollTo({
+      top: document.getElementById("projects").offsetTop,
+      behavior: "smooth",
+    });
+  };
+  
 
   return (
     <section id="projects" className="p-5 min-h-screen">
@@ -91,7 +99,6 @@ const ProjectsPage = () => {
         {currentProjects.map((project, index) => (
           <li key={index}>
             <ProjectCard
-              delay={index*250}
               title={project.title}
               description={project.description}
               imgUrl={project.image}

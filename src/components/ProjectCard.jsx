@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, delay }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div
       className="h-[400px] md:h-[450px] lg:h-[480px] rounded-xl shadow bg-[#0d0d31] transition-transform duration-300 transform hover:scale-105"
@@ -18,7 +18,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, delay }) 
           <a
             href={gitUrl}
             target="_blank"
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#babec0] hover:border-white group/a"
+            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#000000] hover:border-white group/a"
           >
             <img
               src="/github.png"
@@ -28,10 +28,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, delay }) 
           <a
             href={previewUrl}
             target="_blank"
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/a"
+            className="h-14 w-14 border-2 relative rounded-full border-[#000000] hover:border-white group/a"
           >
             <img
-              src="/dribbble.png"
+              src="/view.png"
               className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/a:text-white"
             />
           </a>
